@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe - Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="main-header">
+        <nav class="container">
+            <a href="#hero" class="logo">JD</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun" style="display: none;"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Innovate.</span>
+                        <span class="gradient-text">Create.</span>
+                        <span class="gradient-text">Inspire.</span>
+                    </h1>
+                    <p class="hero-subtitle">Crafting next-generation digital experiences with cutting-edge technology and thoughtful design.</p>
+                    <div class="button-group">
+                        <a href="#projects" class="cta-button">Explore My Work</a>
+                        <a href="#contact" class="secondary-button">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+            <div class="hero-particles" id="particles-js"></div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2><span class="section-number">01</span> About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="intro">I'm a passionate designer and developer focused on creating seamless digital experiences that blend form and function.</p>
+                        <p>With a background in both visual design and technical implementation, I bridge the gap between aesthetics and functionality. My approach combines design thinking with technical expertise to deliver solutions that are both beautiful and performant.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="5">0</span>+
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="30">0</span>+
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-wrapper glass-effect">
+                            <div class="image-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section alt-bg">
+            <div class="container">
+                <h2><span class="section-number">02</span> Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card glass-effect">
+                        <div class="project-image">
+                            <div class="image-placeholder" style="background-color: #3a3a3c;"></div>
+                        </div>
+                        <h3>Project Titanium</h3>
+                        <p>A revolutionary interface design system that reimagines user interactions for enterprise applications.</p>
+                        <div class="project-footer">
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            <div class="project-tags">
+                                <span>UI/UX</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect">
+                        <div class="project-image">
+                            <div class="image-placeholder" style="background-color: #2c2c2e;"></div>
+                        </div>
+                        <h3>AI Concept Interface</h3>
+                        <p>Exploring the future of human-AI interaction with natural language processing and adaptive interfaces.</p>
+                        <div class="project-footer">
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            <div class="project-tags">
+                                <span>AI</span>
+                                <span>Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect">
+                        <div class="project-image">
+                            <div class="image-placeholder" style="background-color: #3a3a3c;"></div>
+                        </div>
+                        <h3>Minimalist App Design</h3>
+                        <p>A productivity suite that reduces cognitive load through thoughtful reduction and intuitive gestures.</p>
+                        <div class="project-footer">
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            <div class="project-tags">
+                                <span>iOS</span>
+                                <span>SwiftUI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="#" class="view-all">View All Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <div class="container">
+                <h2><span class="section-number">03</span> Core Competencies</h2>
+                <div class="skills-container">
+                    <div class="skill-category glass-effect">
+                        <h3>Design</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">Web Accessibility</span>
+                            <span class="skill-tag">Design Systems</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-effect">
+                        <h3>Development</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Frontend Development</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">SwiftUI</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-effect">
+                        <h3>Other</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Cloud Services</span>
+                            <span class="skill-tag">Agile Methodologies</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Technical Writing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section alt-bg">
+            <div class="container">
+                <h2><span class="section-number">04</span> Get In Touch</h2>
+                <p class="contact-intro">Interested in collaborating or have a question? I'm currently available for select freelance opportunities and always open to interesting conversations.</p>
+                <div class="contact-container">
+                    <div class="contact-info glass-effect">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out through any of these channels:</p>
+                        <div class="contact-methods">
+                            <a href="mailto:hello@janedoe.design" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@janedoe.design</span>
+                            </a>
+                            <a href="tel:+1234567890" class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (234) 567-890</span>
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form glass-effect">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">JD</div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; <span id="current-year"></span> Jane Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
